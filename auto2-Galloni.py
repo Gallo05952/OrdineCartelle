@@ -151,7 +151,6 @@ def SeparazioneFile(path, file):
         "Presentazioni": {"estensioni": ["ppt", "pptx"], "icona": r"C:\Users\galloni\OneDrive\Immagini\Icone\presentazioni.ico"},
         "Aspen": {"estensioni": ["apwz", "apw"], "icona": r"C:\Users\galloni\OneDrive\Immagini\Icone\aspen.ico"},
         "AutoCAD": {"estensioni": ["dwg", "dxf"], "icona": r"C:\Users\galloni\OneDrive\Immagini\Icone\cad.ico"},
-        "Coding": {"estensioni": ["py", "java", "cpp", "c", "html", "css", "js", "php", "sql"], "icona": r"C:\Users\galloni\OneDrive\Immagini\Icone\coding.ico"},
         "Altro": {"estensioni": [], "icona": r"C:\Users\galloni\OneDrive\Immagini\Icone\altro.ico"}
     }
     for cartella, dati in mappaEstensioni.items():
@@ -181,6 +180,6 @@ def rimuoviCartelleVuote(percorso):
             if not os.listdir(percorso):
                 os.rmdir(percorso)
 
-percorsi_principali = [r"C:\Users\galloni\OneDrive - unibs.it\Corsi\Python\Analisi_Dati"]
+percorsi_principali = [r"C:\Users\galloni\Desktop"]
 for percorsi in percorsi_principali:
     organizzaFile(percorsi)
